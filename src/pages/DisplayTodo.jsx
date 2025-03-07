@@ -5,7 +5,8 @@ import { MdDeleteForever } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 // Use the environment variable
-const baseURL = import.meta.env.VITE_API_URL;
+const baseURL =
+  "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net";
 
 export const DisplayTodo = () => {
   const [todos, settodos] = useState([]);
