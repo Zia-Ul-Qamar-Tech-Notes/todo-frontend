@@ -19,6 +19,12 @@ jobs:
       - name: Build React app
         run: npm run build
 
+      - name: List build directory contents
+        run: ls -al build
+
+      - name: Echo Azure Storage Account Name
+        run: echo "Azure Storage Account Name: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}"
+
       - name: Deploy to Azure Storage
         uses: azure/CLI@v1
         with:
