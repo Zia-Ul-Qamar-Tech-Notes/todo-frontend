@@ -1,6 +1,6 @@
 // Layout.js
 import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, Link } from "react-router-dom";
 
 function Layout() {
   let userId = window.localStorage.getItem("userId");
@@ -27,16 +27,16 @@ function Layout() {
                   Logout
                 </button>
                 <li>
-                  <a href="/create-todo">Create Todo</a>
+                  <Link to={"/create-todo"}>Create Todo</Link>
                 </li>
               </div>
             ) : (
               <div className=" flex gap-2">
                 <li>
-                  <a href="/login">Login</a>
+                  <Link to={"/login"}>Login</Link>
                 </li>
                 <li>
-                  <a href="/register">Register</a>
+                  <Link to={"/register"}>Register</Link>
                 </li>
               </div>
             )}
