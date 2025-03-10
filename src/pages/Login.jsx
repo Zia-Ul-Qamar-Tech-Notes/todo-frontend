@@ -13,7 +13,7 @@ export const Login = () => {
     password: password,
   };
   const backendURL =
-    "https://todoserver-c7cvefcxhsawfddw.southeastasia-01.azurewebsites.net";
+    "https://todohost-etctdhd7fhazechy.southeastasia-01.azurewebsites.net";
 
   // const backendURL = "http://localhost:5000";
 
