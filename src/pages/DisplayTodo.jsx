@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 // Use the environment variable
 const baseURL =
-  "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net";
+  "https://todoserver-c7cvefcxhsawfddw.southeastasia-01.azurewebsites.net";
 // const baseURL = "http://localhost:5000";
 
 export const DisplayTodo = () => {
