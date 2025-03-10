@@ -10,10 +10,12 @@ export const Register = () => {
     name: username,
     password: password,
   };
+  const backendURL =
+    "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net";
   let handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net/auth/register",
+        `${backendURL}/auth/register`,
         authData
       );
       console.log(response);
