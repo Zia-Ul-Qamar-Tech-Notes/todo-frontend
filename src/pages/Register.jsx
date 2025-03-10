@@ -12,6 +12,9 @@ export const Register = () => {
   };
   const backendURL =
     "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net";
+
+  // const backendURL = "http://localhost:5000";
+
   let handleSubmit = async () => {
     try {
       const response = await axios.post(
