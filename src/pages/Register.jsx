@@ -13,7 +13,7 @@ export const Register = () => {
   let handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net/auth/register",
         authData
       );
       console.log(response);

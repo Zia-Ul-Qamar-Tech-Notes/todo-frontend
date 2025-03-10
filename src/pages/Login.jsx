@@ -15,7 +15,7 @@ export const Login = () => {
   let handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net/auth/login",
         authData
       );
       console.log(authData);

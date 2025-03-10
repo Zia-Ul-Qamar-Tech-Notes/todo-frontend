@@ -27,9 +27,13 @@ function AddTodo() {
 
     console.log(todo);
     try {
-      const response = await axios.post("http://localhost:5000/todo/", todo, {
-        headers: { authorize: cookies.access_token },
-      });
+      const response = await axios.post(
+        "https://todobackend-bnfwd2e0g3hqa3hv.southeastasia-01.azurewebsites.net/todo/",
+        todo,
+        {
+          headers: { authorize: cookies.access_token },
+        }
+      );
       console.log(response);
     } catch (error) {
       console.log(error);
